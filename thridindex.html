@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="threestyle.css" type="text/css"/>
+</head>
+<body>
+    <div id="btns">
+        <button id="startBtn">Старт игры</button>
+        <button id="ticTacBtn">Крестики нолики</button>
+    </div>
+    <div id="firstStage" class="hide">
+            <label style="font-size: 20px;margin-bottom: 5px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; background-color: darkblue; color: aliceblue;" >Как называется столица России? </label>
+            <div>
+                <input id="firstStageInput" style="margin-left: 5px;"/>
+                <button id="firstStageBtn" style="margin-left: 5px;">Ответить</button>
+            </div>
+            <div id="firstStageAsk"></div>
+    </div>
+    <div id="secondStage" class="hide">
+        <div style="margin-bottom: 5px; font-size: 20px; font-family: Arial, Helvetica, sans-serif; background-color: indigo; color: darkorange;">На какой картинке изображен мужчина?</div>
+        <div>
+            <img id="secondStageImg1" src="media/bulka.jpg"width="263px"/>
+            <img id="secondStageImg2" src="media/56137e53246061fe6a57421c809f17f1.jpg" width="350px"/>
+        </div>
+        <div id="secondStageAsk"></div>
+    </div>
+    <div id="thirdStage" class="hide">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <div id="thirdStageAsk">Победи монстра</div>
+            <div id="thirdStageHP"></div>
+            <img id="thirdStageImg" src="media/Mons.jpg"/>
+        </div>
+        <button id="thirdStageAtk">Атаковать</button>
+        <button id="thirdStageHeal">Лечиться</button>
+        <div id="thirdStageHealth"></div>
+    </div>
+    <div id="fourthStage" class="hide">
+        <div id="fourthStageAsk">Найди секретную кнопку</div>
+        <div>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+        </div>
+        <div>
+            <button style="width: 100px; height: 40px;"></button>
+            <button id="fourthStageBtn" style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+        </div>
+        <div>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+        </div>
+        <div>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+            <button style="width: 100px; height: 40px;"></button>
+        </div>
+        <button id="nextStageBtn" class="hide">Далее ===></button>
+    </div>
+    <div id ='fifthStage' class="hide">
+        <div id='fifthStageAnswer'></div>
+        <div>
+            <input id="fifthStageInput" type="number"/>
+            <button id="fifthStageBtn">Ответить</button>
+        </div>
+        <div id="fifthStageAsk">Система выбрала число от 1 до 3. Отгадай данное число</div>
+    </div>
+    <div id="ticTac" class="hide">
+    <table id="table">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        </table>
+        <div id="ask">Идет игра...</div>
+    </div>
+    <script src="eightindex.js"></script>
+</body>
+</html>
